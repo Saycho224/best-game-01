@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Becak Rush — Jakarta</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hud">
+    <div class="chip" id="chip-shift"><span id="shift-name">Pagi</span><span id="timer">75</span></div>
+    <div class="chip" id="chip-fare">
+      <div id="fare-line"><span id="fare">Rp 0</span><span id="target">/ Rp 100.000</span></div>
+      <div id="fare-bar"><div id="fare-fill"></div></div>
+    </div>
+    <div class="chip" id="chip-lives"><span id="lives">♥♥♥</span><span id="speed">0 km/j</span></div>
+  </div>
+  <div id="carry" class="hidden">
+    <div id="carry-label">Penumpang: <span id="carry-fare">Rp 0</span> · antar sebelum sabarnya habis!</div>
+    <div id="patience-bar"><div id="patience-fill"></div></div>
+  </div>
+  <div id="bell" class="hidden">🔔 BEL SIAP <span id="bell-key">[Spasi]</span></div>
+  <div id="toast" class="hidden"></div>
+  <div id="hint">← → / A D pindah jalur · ↑ / W ngebut · ↓ / S ngerem · Spasi bel · P jeda · M suara</div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
